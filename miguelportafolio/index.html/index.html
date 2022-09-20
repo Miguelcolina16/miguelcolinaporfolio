@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css/style.css">
+    <title>Miguel Colina desarrollo web</title>
+</head>
+
+<body>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>MC</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="redes">
+                        <a href="http://www.facebook.com/miguelcolina2000"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/5491124022414"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:miguelcolina16@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Miguel Colina</span>,Desarrollador Web</h2>
+                <p class="descripcion">Desarrollador web Freelance</p>
+                <a href="#portafolio">Ir al portafolio</a>
+            </div>
+        </div>
+    </section>
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="/img/foto perfil.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola,soy <span>Miguel Colina</span></h2>
+            <h3>Desarrollador web</h3>
+            <p>Diseño y codifico,pero mas importante,llegamos a las metas de tu negocio,marca o pagina personal.</p>
+            <h3>Como lo hago:</h3>
+            <ul>
+            <li>Definiendo claramente los objetivos del proyecto.</li>
+            <li>Empatizando con tus usuarios.</li>
+            <li>Ideando soluciones digitales.</li>
+            <li>Construyendo y probando prototipos.</li>
+            <li>Disfrutando del proceso.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Pagina Web Personalizada</h4>
+                <hr>
+                <p>Contar con un sitio web es una necesidad.La tecnología se ha convertido en una herramienta fundamental en la vida de muchas personas. Navegar por internet para hacer consultas de todo tipo, comprar productos y utilizar redes sociales es algo común</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Landing Page</h4>
+                <hr>
+                <p>Logra que ese click se convierta en un cliente para tu producto o servicio</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Tienda Ecommerce</h4>
+                <hr>
+                
+                <p>Tener una plataforma de venta ecommerce diversifica tu presencia en línea, reduce los costos de venta y posiciona tu marca</p>
+            </div>
+        </div>
+    </section>
+    <div class="contenedor-skills" id="skills">
+        <h3>Habilidades</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html y Css</p>
+            </div>
+            <div class="barra">
+                <div id="html" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+            </div>
+            <div class="barra">
+                <div id="js" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Bootsrap</p>
+            </div>
+            <div class="barra">
+                <div id="bst" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de Datos</p>
+            </div>
+            <div class="barra">
+                <div id="bd" class=""></div>
+            </div>
+        </div>
+    </div>
+    <section id="portafolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/img/pagina 1" alt="">
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/img/imagenpagina1.jpg" alt="">
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/img/imagenpagina2" alt="">
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <div class="contenedor-form">
+            <form id="form">
+                <div class="fila mitad">
+                  <input type="text" name="name" placeholder="Nombre Completo:" class="input-mitad">
+                  <input type="text" name="correo" id="name" placeholder="Correo Electronico:" class="input-mitad">
+                </div>
+                <div class="fila">
+                  <input type="text" name="comentario" placeholder="Comentario..." class="input-full">
+                </div>
+                <div class="fila">
+              <input type="text" name="mensaje" placeholder="Tu Mensaje..." class="input-full">
+                </div>
+              
+                <input type="submit" id="button" value="Enviar Mensaje" >
+              </form>
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+                emailjs.init('iJlSac9A7NLdYSdVB')
+            </script>
+        </div>
+    </section>
+    <footer>
+        <p>Todos los derechos reservados-2022</p>
+        <div class="redes">
+            <a href="http://www.facebook.com/miguelcolina2000"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/5491124022414"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:miguelcolina16@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+    <script src="/app.js/app.js"></script>
+</body>
+  
+</html>
